@@ -1,0 +1,19 @@
+@font-face {
+	font-family: 'badaboom';
+	src:url('../fonts/badaboom.ttf');
+}
+
+body {
+	font-family: 'badaboom';
+}
+
+#header_wrapper {
+	width: 100%;
+	text-align: center;
+	font-size: 80px;
+}
+
+#header_wrapper > h1 {
+	letter-spacing: 15px;
+	margin: 40px 0 0 0;
+}
