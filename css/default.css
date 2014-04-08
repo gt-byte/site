@@ -4,16 +4,19 @@
 }
 
 body {
-	font-family: 'badaboom';
+	color: #444961;
+	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
 }
 
 #header_wrapper {
 	width: 100%;
 	text-align: center;
-	font-size: 80px;
+	font-size: 5.5em;
+	font-weight: 100;
+	line-height: 1.1;
 }
 
 #header_wrapper > h1 {
-	letter-spacing: 15px;
 	margin: 40px 0 0 0;
 }
