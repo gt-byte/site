@@ -6,6 +6,10 @@
 
 }
 
+#section-1 {
+	background: #EFEAEA;
+}
+
 /* Clear floats of children */
 .section:before,
 .section:after {
