@@ -68,7 +68,8 @@ span {
 
 /*body { background-image: url(http://subtlepatterns.com/patterns/ricepaper.png) }*/
 
-#submit-email {
+#submit-button {
+	padding: 6px;
 	position: relative;
     color: rgba(255,255,255,1);
     text-decoration: none;
@@ -95,7 +96,7 @@ span {
 	transition: all .1s ease;
 }
 
-#submit-email:hover {
+#submit-button:hover {
     -webkit-box-shadow: -3px 0px 0px rgba(219,31,5,1), 0px 3px 6px rgba(0,0,0,.9);
     -moz-box-shadow: -3px 0px 0px rgba(219,31,5,1), 0px 3px 6px rgba(0,0,0,.9);
     box-shadow: -3px 0px 0px rgba(219,31,5,1), 0px 3px 6px rgba(0,0,0,.9);
