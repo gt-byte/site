@@ -7,6 +7,7 @@ header {
 	color: #444961;
 	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	-webkit-font-smoothing: antialiased;
+	height: 100%;
 }
 
 #header_wrapper {
