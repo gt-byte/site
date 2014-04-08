@@ -31,10 +31,37 @@
 
 .section-info-title {
 	font-weight: 400;
+	padding-left: 0em;
+}
+
+.section-feature-icon {
+	width: 20%;
+	padding-top: 2em;
+	padding-left: 2em;
+	float: left;
+}
+
+.section-feature {
+	width: 80%;
+	float: left;
+	padding-left: 2em;
+}
+
+#section-mobile-icon {
+	padding-top: 3em;
+	padding-left: 3.1em;
+}
+
+#section-mobile-feature {
+
 }
 
 .pic {
 
+}
+
+#burger-pic {
+	margin-top: 5em;
 }
 
 /* Sides */
@@ -66,7 +93,8 @@
 }
 
 .side-left {
-	text-align: right;
+	text-align: left;
+
 }
 
 .side-right img {
@@ -75,6 +103,16 @@
 
 .side-left img {
 	float: right;
+}
+
+.side-left-info {
+	width: 60%;
+	padding-left: 6em;
+}
+
+.side-right-pic {
+	width: 40%;
+	padding: 7em 5em 5em 0;
 }
 
 /* Initial state (hidden or anything else) */
@@ -125,6 +163,10 @@
 
 	.side img {
 		max-width: 120%;
+	}
+
+	#burger-pic {
+		margin-top: -4em;
 	}
 }
 

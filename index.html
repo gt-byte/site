@@ -12,6 +12,7 @@
 		<link rel="stylesheet" type="text/css" href="css/default.css" />
 		<link rel="stylesheet" type="text/css" href="css/components.css" />
 		<link rel="stylesheet" type="text/css" href="css/header.css" />
+		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
 		<!--<script src="js/modernizr.custom.js"></script>-->
 	</head>
@@ -40,23 +41,47 @@
 			</header>
 			<div id="scroller" class="scroller">
 				<section class="section">
-					<article class="side side-left">
+					<article class="side side-left side-left-info">
 						<h3>Fast food delivery at your fingertips</h3>
-						<p class="section-info-title section-info">Easy to navigate app</p>
-						<p class="section-info">Simply choose your restaurant, add food items to your cart, pay for your order, and wait for your delicious food to be delivered.</p>
-						<p class="section-info-title section-info">More orders = more rewards</p>
-						<p class="section-info">Earn bits with each order to gain rewards for in app purchases and money off future orders.</p>
-						<p class="section-info-title section-info">Cross-platform</p>
-						<p class="section-info">Order from Android, iPhone, or the comfort of your own browser</p>
+
+						<div>
+							<div id="section-mobile-icon" class="section-feature-icon">
+								<i class="fa fa-mobile fa-5x"></i>
+							</div>
+							<div id="section-mobile-feature" class="section-feature">
+								<p class="section-info-title section-info">Easy to navigate app</p>
+								<p class="section-info">Simply choose your restaurant, add food items to your cart, pay for your order, and wait for your delicious food to be delivered.</p>
+							</div>
+						</div>
+						<div>
+							<div class="section-feature-icon">
+								<i class="fa fa-gift fa-5x"></i>
+							</div>
+							<div class="section-feature">
+								<p class="section-info-title section-info">More orders = more rewards</p>
+								<p class="section-info">Earn bits with each order to gain rewards for in app purchases and money off future orders.</p>
+							</div>
+						</div>
+						<br></br>
+						<div>
+							<div class="section-feature-icon">
+								<i class="fa fa-laptop fa-4x"></i>
+							</div>
+							<div class="section-feature">
+								<p class="section-info-title section-info">Cross-platform</p>
+								<p class="section-info">Order from Android, iPhone, or the comfort of your own browser</p>
+							</div>
+						</div>
+
 					</article>
-					<figure class="side side-right">
-						<img class="pic" src="images/burger.png" alt="burger">
+					<figure class="side side-right side-right-pic">
+						<img id="burger-pic" class="pic" src="images/burger.png" alt="burger">
 					</figure>
 				</section>
 
 				<section class="section">
 					<figure class="side side-left">
-						<img src="images/cup.png" alt="cup">
+						<img id="cup-pic" class="pic" src="images/cup.png" alt="cup">
 					</figure>
 					<article class="side side-right">
 						<h3>Fast food delivery at your fingertips</h3>
@@ -80,7 +105,7 @@
 						<p class="section-info">Order from Android, iPhone, or the comfort of your own browser</p>
 					</article>
 					<figure class="side side-right">
-						<img class="pic" src="images/fries.png" alt="fries">
+						<img id="fries-pic" class="pic" src="images/fries.png" alt="fries">
 					</figure>
 				</section>
 			</div>
