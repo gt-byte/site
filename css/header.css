@@ -1,14 +1,3 @@
-@font-face {
-	font-family: 'badaboom';
-	src:url('../fonts/badaboom.ttf');
-}
-
-body {
-	color: #444961;
-	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	-webkit-font-smoothing: antialiased;
-}
-
 #header_wrapper {
 	width: 100%;
 	text-align: center;
