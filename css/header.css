@@ -17,10 +17,31 @@ header {
 	line-height: 1.1;
 }
 
-img {
-	height: 10;
-	width: 10;
+input[type=submit]{
+	padding: 9px;
+	font-size: 18px;
+	margin: 0;
+	background: #000;
+	color: #fff;
+
+	border: 2px;
+	border-radius:25px;
 }
+
+
+input[type=email]{
+	padding: 9px;
+	font-size: 18px;
+
+	margin: 0;
+
+	border: 2px solid;
+	border-radius:5px;
+
+	background: #eee;
+	color: #444961;
+}
+
 
 #title {
 	margin: 0 0 0 0;
