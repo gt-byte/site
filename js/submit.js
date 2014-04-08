@@ -1,4 +1,4 @@
-
+var invite_email = "";
 
 $(document).ready(function() {
         $('#submit-button').click(function(){
@@ -10,19 +10,19 @@ $(document).ready(function() {
 });
 
 
-
-
 function submit(email){
         $.ajax({
                 url: 'http://localhost/email.php', // name of script which sends the mail
                 type: 'post',
                 data: {"email":email},
                 success: function(data, success) {
-                        alert(data);
-                        document.write("worked:" + email);
+                        //alert(data);
+                        var response = data;
+                        document.getElementById("server-response").innerHTML = response;
                 },
                 error: function (error) {
-                        document.write(error.Message);
+                        var response = "error:" + error.Message;
+                        document.getElementById("server-response").innerHTML = response;
                 }
         });
 }
