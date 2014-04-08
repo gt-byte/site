@@ -23,16 +23,22 @@ header {
 	*/
 }
 
-#beta-invite {
-	font-size: 0.3em;
-}
-
 #title {
 	margin: 0 0 0 0;
 }
 #title span{
 	font-size: 0.3em;
 }
+
+#slogan {
+	margin: 0 0 0 0;
+}
+
+#beta-invite {
+	font-size: 0.3em;
+}
+
+
 span {
 	display: block;
 }
