@@ -38,6 +38,7 @@ input[type=email]{
 
 	border: 2px solid;
 	border-radius:5px;
+	border-color: rgba(219,87,5,1);
 
 	background: #eee;
 	color: #444961;
@@ -62,4 +63,42 @@ input[type=email]{
 
 span {
 	display: block;
+}
+
+
+/*body { background-image: url(http://subtlepatterns.com/patterns/ricepaper.png) }*/
+
+#submit-email {
+	position: relative;
+    color: rgba(255,255,255,1);
+    text-decoration: none;
+    background-color: rgba(219,87,5,1);
+    font-family: 'Yanone Kaffeesatz';
+    font-weight: 700;
+    font-size: 0.25em;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: -6px 0px 0px rgba(219,31,5,1), 0px 3px 3px rgba(0,0,0,.7);
+    -moz-box-shadow: -6px 0px 0px rgba(219,31,5,1), 0px 3px 3px rgba(0,0,0,.7);
+    box-shadow: -6px 0px 0px rgba(219,31,5,1), 0px 3px 3px rgba(0,0,0,.7);
+    /*
+    margin: 100px auto;
+	width: 160px; 
+	*/
+	text-align: center;
+	
+	-webkit-transition: all .1s ease;
+	-moz-transition: all .1s ease;
+	-ms-transition: all .1s ease;
+	-o-transition: all .1s ease;
+	transition: all .1s ease;
+}
+
+#submit-email:hover {
+    -webkit-box-shadow: -3px 0px 0px rgba(219,31,5,1), 0px 3px 6px rgba(0,0,0,.9);
+    -moz-box-shadow: -3px 0px 0px rgba(219,31,5,1), 0px 3px 6px rgba(0,0,0,.9);
+    box-shadow: -3px 0px 0px rgba(219,31,5,1), 0px 3px 6px rgba(0,0,0,.9);
+    position: relative;
+    right: 6px;
 }
