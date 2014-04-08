@@ -24,13 +24,17 @@
 	line-height: 1;
 }
 
-.section p {
+.section-info {
 	font-size: 1.5em;
-	font-weight: 300;
+	font-weight: 200;
+}
+
+.section-info-title {
+	font-weight: 400;
 }
 
 .pic {
-	margin-top: -5em;
+
 }
 
 /* Sides */
@@ -110,7 +114,7 @@
 
 /* Example media queries */
 
-@media screen and (max-width: 73.5em) {
+@media screen and (max-width: 63.5em) {
 	.scroller {
 		font-size: 65%;
 	}
