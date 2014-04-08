@@ -1,0 +1,138 @@
+.scroller {
+	margin-top: 3em;
+	overflow: hidden;
+}
+
+.section {
+
+}
+
+/* Clear floats of children */
+.section:before,
+.section:after {
+	content: " ";
+	display: table;
+}
+
+.section:after {
+	clear: both;
+}
+
+/* Text styling */
+.section h2 {
+	font-size: 5em;
+	font-weight: 300;
+	line-height: 1;
+}
+
+.section p {
+	font-size: 2em;
+	font-weight: 300;
+}
+
+.pic {
+	margin-top: -5em;
+}
+
+/* Sides */
+.side {
+	width: 50%;
+	float: left;
+	margin: 0;
+	padding: 3em 4%;
+	overflow: hidden;
+	min-height: 12em;
+	-webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+	-moz-transition: -moz-transform 0.5s, opacity 0.5s;
+	transition: transform 0.5s, opacity 0.5s;
+}
+
+/* Clear floats of children */
+.side:before,
+.side:after {
+	content: " ";
+	display: table;
+}
+
+.side:after {
+	clear: both;
+}
+
+.side-right {
+	text-align: left;
+}
+
+.side-left {
+	text-align: right;
+}
+
+.side-right img {
+	float: left;
+}
+
+.side-left img {
+	float: right;
+}
+
+/* Initial state (hidden or anything else) */
+.init .side {
+	opacity: 0;
+}
+
+.init .side-left {
+	-webkit-transform: translateX(-80px);
+	-moz-transform: translateX(-80px);
+	transform: translateX(-80px);
+}
+
+.init .side-right {
+	-webkit-transform: translateX(80px);
+	-moz-transform: translateX(80px);
+	transform: translateX(80px);
+}
+
+/* Animated state */
+/* add you final states (transition) or your effects (animations) for each side */
+.section.animate .side-left,
+.section.animate .side-right {
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	transform: translateX(0px);
+	opacity: 1;
+}
+
+/* For example, add a delay for the right side:
+.section.animate .side-right {
+	-webkit-transition-delay: 0.2s;
+	-moz-transition-delay: 0.2s;
+	transition-delay: 0.2s;
+}
+*/
+
+/* Example media queries */
+
+@media screen and (max-width: 73.5em) {
+	.scroller {
+		font-size: 65%;
+	}
+
+	.section h2 {
+		margin: 0;
+	}
+
+	.side img {
+		max-width: 120%;
+	}
+}
+
+@media screen and (max-width: 41.125em) {
+	.side {
+		float: none;
+		width: 100%;
+	}
+
+	.side img {
+		max-width: 100%;
+	}
+}
+
