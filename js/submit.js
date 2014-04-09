@@ -37,12 +37,12 @@ function showResponse(data){
         if(data==='1'){
                 var response = "<br>You will be notified when Byte is up and running! <br>" + "In the mean time, invite your friends.";
                 document.getElementById("server-response").innerHTML = response ; //+ "<br>"+ data;
-                document.getElementById("server-response").style.color = "#59E817" ;
+                document.getElementById("server-response").style.color = "#00C618" ;
                 //showShareLink();
         }else if(data==='2'){
                 var response = "<br>This email is already registered! <br>" + "In the mean time, invite your friends.";
                 document.getElementById("server-response").innerHTML = response ;// + "<br>" + data;
-                document.getElementById("server-response").style.color = "#59E817";
+                document.getElementById("server-response").style.color = "#00C618";
                 //showShareLink();
         }else if(data==='0'){
                 var response = "<br>This email is not valid! <br>" + "Please enter a valid email address.";
@@ -51,7 +51,7 @@ function showResponse(data){
         }else{
                 var response = "<br>Error connecting to server! <br>" + "Please try again in a bit.";
                 document.getElementById("server-response").innerHTML = response; //+ "<br>"  + data;
-                document.getElementById("server-response").style.color = "#FDD017";
+                document.getElementById("server-response").style.color = "#F70D1A";
         }
         fixHeaderHeight();
         scrollToResponse();
