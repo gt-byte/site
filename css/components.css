@@ -114,6 +114,16 @@
 	padding-left: 6em;
 }
 
+.side-right-info {
+	width: 60%;
+	padding-right: 6em;
+}
+
+.side-left-pic {
+	width: 40%;
+	padding: 7em 0 5em 5em;
+}
+
 .side-right-pic {
 	width: 40%;
 	padding: 7em 5em 5em 0;
@@ -197,4 +207,23 @@
 		padding: 0 4% 3em 4%;
 	}
 }
+
+
+/* icons */
+
+.fa-cutlery {
+	margin-left: -0.1em;
+}
+
+.fa-check-square {
+	margin-left: -0.4em;
+}
+
+.fa-credit-card {
+	margin-left: -0.2em;
+}
+
+
+
+
 
