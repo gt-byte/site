@@ -139,7 +139,7 @@
 } )( window );
 
 
-/*
+
 $( window ).resize(function() {
 
 	var width_px = $( window ).width();
@@ -159,6 +159,6 @@ $( document ).ready(function() {
 	if (width_em <= 41.125 || width_px <= 568) {
 		$( ".side-left-2" ).insertAfter( $( ".side-right-2" ));
 	}
-});*/
+});
 
 
