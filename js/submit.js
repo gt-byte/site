@@ -22,8 +22,7 @@ function submit(email){
                         showResponse(data);
                 },
                 error: function (error) {
-                        var response = "Error:" + error.Message;
-                        document.getElementById("server-response").innerHTML = response;
+                        showResponse(-1);
                 }
         });
 }
@@ -42,12 +41,17 @@ function showResponse(data){
                 document.getElementById("server-response").innerHTML = response ;// + "<br>" + data;
                 document.getElementById("server-response").style.color = "#59E817";
 
-        }else{
+        }else if(data==='3'){
                 var response = "<br>This email is not valid! <br>" + "Please enter a valid email address.<br>";
                 document.getElementById("server-response").innerHTML = response; //+ "<br>"  + data;
                 document.getElementById("server-response").style.color = "#F70D1A";
+        }else{
+                var response = "<br>Error connecting to server! <br>" + "Please try again in a bit.<br>";
+                document.getElementById("server-response").innerHTML = response; //+ "<br>"  + data;
+                document.getElementById("server-response").style.color = "#FDD017";
         }
         fixHeaderHeight();
+        scrollToResponse();
 }      
 
 function fixHeaderHeight(){
@@ -55,4 +59,14 @@ function fixHeaderHeight(){
         document.getElementById("header").style.minHeight = document.getElementById("header").offsetHeight + offset + "px";
 }
 
+function scrollToResponse(){
+        var offset = document.getElementById("header").offsetHeight - $(window).height();
+        //alert(offset);
+        if(offset > 0){
+                $('html, body').animate({
+                        scrollTop: offset,
+                        scrollLeft: 0
+                }, 600);
+        }
+}
 
