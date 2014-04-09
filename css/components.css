@@ -221,14 +221,18 @@
 	margin-left: -0.1em;
 }
 
-.fa-check-square {
-	margin-left: -0.4em;
-}
-
 .fa-credit-card {
 	margin-left: -0.2em;
 }
 
+.fa-money {
+	margin-left: -0.3em;
+}
+
+.fa-moon-o,
+.fa-check-square {
+	margin-left: -0.4em;
+}
 
 
 
