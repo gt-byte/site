@@ -29,7 +29,7 @@ function submit(email){
 
 function showResponse(data){
         //data = parseInt(data);
-        alert(typeof data);
+        //alert(typeof data);
         alert(data);
         if(data==="1"){
                 var response = "<br>You will be notified when Byte is up and running! <br>" + "In the mean time, invite your friends:<br>";
