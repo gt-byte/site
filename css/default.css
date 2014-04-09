@@ -183,3 +183,15 @@ a:hover {
 		text-indent: 30px;
 	}
 }
+
+footer {
+	display: block;
+}
+
+.footer {
+	height: 2em;
+	text-align: center;
+}
+
+
+
