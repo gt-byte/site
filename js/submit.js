@@ -14,7 +14,7 @@ $(document).ready(function() {
 
 function submit(email){
         $.ajax({
-                url: 'http://ec2-54-211-14-37.compute-1.amazonaws.com/insertEmail.php', 
+                url: 'php/insertEmail.php', 
                 //url: 'http://datbyte.com/insertEmail.php',
                 type: 'post',
                 data: {"email":email},
