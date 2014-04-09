@@ -137,3 +137,17 @@
 	window.Scroller =  Scroller;
 
 } )( window );
+
+
+window.onresize = function(event) {
+	var width =  $( window ).width() / parseFloat($("body").css("font-size"));
+	if (width <= 41.125) {
+		$( ".side-left-2" ).insertAfter( $( ".side-right-2" ));
+	}
+	else if (width > 41.125) {
+		$( ".side-left-2" ).insertBefore( $( ".side-right-2" ));
+	}
+};
+
+
+
