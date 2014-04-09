@@ -1,6 +1,9 @@
 var invite_email = "";
 
 $(document).ready(function() {
+        var offset = $(window).height()- document.getElementById("header").offsetHeight;
+        document.getElementById("header").style.minHeight = document.getElementById("header").offsetHeight + offset + "px";
+
         $('#submit-button').click(function(){
                 var email_field = document.getElementById("input-email");
                 var value =  email_field.form.email.value;
