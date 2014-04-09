@@ -188,7 +188,7 @@ footer {
 	display: block;
 }
 
-.footer {
+#footer-wrapper {
 	height: 2em;
 	text-align: center;
 }
