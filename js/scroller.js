@@ -150,7 +150,9 @@ window.onresize = function(event) {
 };
 
 $( document ).ready(function() {
-	$( ".side-left-2" ).insertAfter( $( ".side-right-2" ));
+	if (width > 41.125) {
+		$( ".side-left-2" ).insertAfter( $( ".side-right-2" ));
+	}
 });
 
 
