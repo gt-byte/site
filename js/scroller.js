@@ -115,7 +115,7 @@
 			window.addEventListener( 'scroll', scrollHandler, false );
 			window.addEventListener( 'resize', resizeHandler, false );
 		},
-		` {
+		_scrollPage : function() {
 			var self = this;
 
 			this.sections.forEach( function( el, i ) {
