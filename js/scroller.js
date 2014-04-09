@@ -115,7 +115,7 @@
 			window.addEventListener( 'scroll', scrollHandler, false );
 			window.addEventListener( 'resize', resizeHandler, false );
 		},
-		_scrollPage : function() {
+		` {
 			var self = this;
 
 			this.sections.forEach( function( el, i ) {
@@ -139,20 +139,26 @@
 } )( window );
 
 
-window.onresize = function(event) {
-	var width =  $( window ).width() / parseFloat($("body").css("font-size"));
-	if (width <= 41.125) {
+/*
+$( window ).resize(function() {
+
+	var width_px = $( window ).width();
+	var width_em =  width_px / parseFloat($("body").css("font-size"));
+	if (width_em <= 41.125) {
 		$( ".side-left-2" ).insertAfter( $( ".side-right-2" ));
 	}
-	else if (width > 41.125) {
+	else if (width_em > 41.125) {
 		$( ".side-left-2" ).insertBefore( $( ".side-right-2" ));
 	}
-};
+});
 
 $( document ).ready(function() {
-	if (width > 41.125) {
+
+	var width_px = $( window ).width();
+	var width_em =  width_px / parseFloat($("body").css("font-size"));
+	if (width_em <= 41.125 || width_px <= 568) {
 		$( ".side-left-2" ).insertAfter( $( ".side-right-2" ));
 	}
-});
+});*/
 
 

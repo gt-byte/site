@@ -163,7 +163,8 @@ a:hover {
 	content: "\e004";
 }
 
-@media screen and (max-width: 55em) {
+@media screen and (max-width: 55em),
+@media screen and (max-width: 568px) {
 
 	.container > header h1,
 	.container > header nav {
