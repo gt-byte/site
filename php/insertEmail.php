@@ -1,28 +1,31 @@
 <?php
 
 
-$con=mysqli_connect("ec2-54-227-167-5.compute-1.amazonaws.com","root","ilikecake");
-mysql_select_db("ByteDB",$con) or die("Could not select examples");
+$con = mysql_connect("localhost","root","ilikecake");
+mysql_select_db("mysql",$con) or die("Could not select examples");
 
-$isValid = mysql_query($con, "SELECT email FROM Singups WHERE email = $email");
- echo $isValid;
+$email = $_POST["email"];
+$email = mysql_real_escape_string($email);
+
+$doesExist = mysql_query("SELECT email FROM Singups WHERE email = '$email'", $con);
+ 
+
 
 if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     // invalid emailaddress
 	echo 0;
 
-} else if( mysql_query($con, "SELECT email FROM Singups WHERE email = $email"){
+} else if(! mysql_num_rows($doesExist) ){
 
-echo 2;
-
-}else{
-
-mysqli_query($con,"INSERT INTO Singups (EmailAddress)
-VALUES ('emailBLAH')");
+mysql_query("INSERT INTO Singups(email) VALUES ('$email')", $con);
 
 echo 1;
 
+}else{
+
+echo 2;
+
 }
 
-mysqli_close($con);
+mysql_close($con);
 ?>
