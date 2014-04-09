@@ -8,6 +8,14 @@ $(document).ready(function() {
                 var value =  email_field.form.email.value;
                 submit(value);
         });
+        $('#input-email').keypress(function(e){
+                if(e.keyCode == 13){
+                        var email_field = document.getElementById("input-email");
+                        var value =  email_field.form.email.value;
+                        submit(value);
+                }     
+        });
+
 });
 
 
