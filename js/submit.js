@@ -15,6 +15,7 @@ $(document).ready(function() {
 function submit(email){
         $.ajax({
                 url: 'http://ec2-54-211-14-37.compute-1.amazonaws.com/insertEmail.php', 
+                //url: 'http://datbyte.com/insertEmail.php',
                 type: 'post',
                 data: {"email":email},
                 success: function(data, success) {
@@ -47,12 +48,7 @@ function showResponse(data){
                 document.getElementById("server-response").style.color = "#F70D1A";
         }
         fixHeaderHeight();
-}       
-
-function showShare(){
-
-}
-
+}      
 
 function fixHeaderHeight(){
         var offset = $(window).height()- document.getElementById("header").offsetHeight;
