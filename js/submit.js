@@ -7,15 +7,13 @@ $(document).ready(function() {
                 var email_field = document.getElementById("input-email");
                 var value =  email_field.form.email.value;
                 submit(value);
-                ///};
         });
 });
 
 
 function submit(email){
         $.ajax({
-                url: 'php/insertEmail.php', 
-                //url: 'http://datbyte.com/insertEmail.php',
+                url: 'php/insertEmail.php', //url: 'http://datbyte.com/insertEmail.php',
                 type: 'post',
                 data: {"email":email},
                 success: function(data, success) {
@@ -28,31 +26,33 @@ function submit(email){
 }
 
 function showResponse(data){
-        //data = parseInt(data);
-        //alert(typeof data);
-        //alert(data);
-        if(data==="1"){
-                var response = "<br>You will be notified when Byte is up and running! <br>" + "In the mean time, invite your friends:<br>";
+        if(data==='1'){
+                var response = "<br>You will be notified when Byte is up and running! <br>" + "In the mean time, invite your friends.";
                 document.getElementById("server-response").innerHTML = response ; //+ "<br>"+ data;
                 document.getElementById("server-response").style.color = "#59E817" ;
-                showShare();
+                //showShareLink();
         }else if(data==='2'){
-                var response = "<br>This email is already registered! <br>" + "In the mean time, invite your friends:<br>";
+                var response = "<br>This email is already registered! <br>" + "In the mean time, invite your friends.";
                 document.getElementById("server-response").innerHTML = response ;// + "<br>" + data;
                 document.getElementById("server-response").style.color = "#59E817";
-
-        }else if(data==='3'){
-                var response = "<br>This email is not valid! <br>" + "Please enter a valid email address.<br>";
+                //showShareLink();
+        }else if(data==='0'){
+                var response = "<br>This email is not valid! <br>" + "Please enter a valid email address.";
                 document.getElementById("server-response").innerHTML = response; //+ "<br>"  + data;
                 document.getElementById("server-response").style.color = "#F70D1A";
         }else{
-                var response = "<br>Error connecting to server! <br>" + "Please try again in a bit.<br>";
+                var response = "<br>Error connecting to server! <br>" + "Please try again in a bit.";
                 document.getElementById("server-response").innerHTML = response; //+ "<br>"  + data;
                 document.getElementById("server-response").style.color = "#FDD017";
         }
         fixHeaderHeight();
         scrollToResponse();
 }      
+
+function showShareLink(){
+        document.getElementById("share-link").innerHTML = "www.datbyte.com"; //+ "<br>"  + data;
+        document.getElementById("share-link").style.color = "#1F45FC";
+}
 
 function fixHeaderHeight(){
         var offset = $(window).height()- document.getElementById("header").offsetHeight;
@@ -61,7 +61,6 @@ function fixHeaderHeight(){
 
 function scrollToResponse(){
         var offset = document.getElementById("header").offsetHeight - $(window).height();
-        //alert(offset);
         if(offset > 0){
                 $('html, body').animate({
                         scrollTop: offset,
@@ -69,4 +68,3 @@ function scrollToResponse(){
                 }, 600);
         }
 }
-
