@@ -6,7 +6,8 @@
 
 }
 
-#section-1 {
+#section-1,
+#section-3 {
 	background: #EFEAEA;
 }
 
@@ -198,13 +199,18 @@
 		margin-top: -4em;
 	}
 
-	.side-left-info {
+	.side-left-info,
+	.side-right-info  {
 		padding-left: 3em;
 		padding-bottom: 0;
 	}
 
 	.side-right-pic {
 		padding: 0 4% 3em 4%;
+	}
+
+	.side-left-pic {
+		padding: 5em 4% 0 4%;
 	}
 }
 
