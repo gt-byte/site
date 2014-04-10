@@ -31,7 +31,6 @@ function submit(email){
 
 function showResponse(data){
         if(data==='1'){
-<<<<<<< HEAD
                 var response = " <span>You will be notified when Byte is up and running!  </span> <span>In the mean time, invite your friends. </span>";
                 document.getElementById("beta-invite").innerHTML = response ; //+ "<br>"+ data;
                 document.getElementById("beta-invite").style.color = "#41A317" ;
@@ -40,31 +39,14 @@ function showResponse(data){
                 var response = " <span> This email is already registered!  </span> <span> In the mean time, invite your friends. </span>";
                 document.getElementById("beta-invite").innerHTML = response ;// + "<br>" + data;
                 document.getElementById("beta-invite").style.color = "#59E817";
-=======
-                var response = "<br>You will be notified when Byte is up and running! <br>" + "In the mean time, invite your friends.";
-                document.getElementById("server-response").innerHTML = response ; //+ "<br>"+ data;
-                document.getElementById("server-response").style.color = "#00C618" ;
-                //showShareLink();
-        }else if(data==='2'){
-                var response = "<br>This email is already registered! <br>" + "In the mean time, invite your friends.";
-                document.getElementById("server-response").innerHTML = response ;// + "<br>" + data;
-                document.getElementById("server-response").style.color = "#00C618";
->>>>>>> FETCH_HEAD
-                //showShareLink();
         }else if(data==='0'){
                 var response = " <span> This email is not valid! </span> <span> Please enter a valid email address. </span>";
                 document.getElementById("beta-invite").innerHTML = response; //+ "<br>"  + data;
                 document.getElementById("beta-invite").style.color = "#F70D1A";
         }else{
-<<<<<<< HEAD
                 var response = " <span> Error connecting to server! </span> <span>Please try again in a bit.</span>";
                 document.getElementById("beta-invite").innerHTML = response; //+ "<br>"  + data;
                 document.getElementById("beta-invite").style.color = "#F70D1A";
-=======
-                var response = "<br>Error connecting to server! <br>" + "Please try again in a bit.";
-                document.getElementById("server-response").innerHTML = response; //+ "<br>"  + data;
-                document.getElementById("server-response").style.color = "#F70D1A";
->>>>>>> FETCH_HEAD
         }
         fixHeaderHeight();
         scrollToResponse();
