@@ -140,9 +140,16 @@
 
 
 $( window ).scroll(function() {
-	$( ".fa-angle-down" ).fadeOut( "slow", function() {
-		$( ".fa-angle-down" ).remove();
-	});
+	if ($(window).scrollTop() >= 20) {
+		$( ".fa-angle-down" ).fadeOut( "slow", function() {
+			$( ".fa-angle-down" ).hide();
+		});
+	}
+	else {
+		$( ".fa-angle-down" ).fadeIn( "slow", function() {
+			$( ".fa-angle-down" ).show();
+		});
+	}
 });
 
 $( window ).resize(function() {

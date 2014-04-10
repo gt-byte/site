@@ -95,6 +95,12 @@ span {
     right: 6px;
 }
 
-form{
+form {
 	margin: -0.4em 0em 0em 0em;
+} 
+
+#down-arrow-holder {
+	width: 100%;
+	padding-top: 1.5em;
+	text-align: center;
 }
