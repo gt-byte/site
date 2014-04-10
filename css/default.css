@@ -188,10 +188,25 @@ footer {
 	display: block;
 }
 
-#footer-wrapper {
-	height: 2em;
-	text-align: center;
+#footer {
+	background-color: #fff;
 }
 
+#footer-wrapper {
+	margin: 0 auto;
+}
+
+#footer-fb {
+	float: left;
+	width: 50%;
+	text-align: center;
+
+}
+
+#footer-made {
+	float: right;
+	text-align: center;
+	width: 100%;
+}
 
 

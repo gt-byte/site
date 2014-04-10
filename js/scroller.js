@@ -139,6 +139,11 @@
 } )( window );
 
 
+$( window ).scroll(function() {
+	$( ".fa-angle-down" ).fadeOut( "slow", function() {
+		$( ".fa-angle-down" ).remove();
+	});
+});
 
 $( window ).resize(function() {
 
