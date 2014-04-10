@@ -144,11 +144,11 @@ $( window ).scroll(function() {
 		$( ".fa-angle-down" ).fadeOut( "slow", function() {
 			$( ".fa-angle-down" ).hide();
 		});
-		var offset =  $(window).height() - document.getElementById("header").offsetHeight;
-		if(offset < 0){
-			offset = offset + 237;
+		var offset =  document.getElementById("header_wrapper").offsetHeight + 180;
+		if(offset < $(window).height()){
+			offset = $(window).height();
 		}
-        document.getElementById("header").style.minHeight = document.getElementById("header").offsetHeight + offset + "px";
+        document.getElementById("header").style.minHeight = offset + "px";
 	}
 	else {
 		$( ".fa-angle-down" ).fadeIn( "slow", function() {
