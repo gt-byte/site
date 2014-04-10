@@ -105,3 +105,9 @@ form {
 	padding-top: 1.5em;
 	text-align: center;
 }
+
+#down-arrow {
+	cursor: pointer;
+}
+
+
