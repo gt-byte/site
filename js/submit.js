@@ -14,6 +14,16 @@ $(document).ready(function() {
                         submit(value);
                 }
         });
+        $('#down-arrow-holder').click(function(){
+                var targetsection = document.getElementById("section-1");
+                var window_offset = $(targetsection).offset().top;// - $(window).scrollTop();
+                $('html, body').animate({
+                        scrollTop: window_offset,
+                        scrollLeft: 0
+                }, 1000);
+
+        });
+
 });
 
 
