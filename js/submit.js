@@ -2,13 +2,15 @@ $(document).ready(function() {
         fixHeaderHeight();
         $('#submit-button').click(function(){
                 var email_field = document.getElementById("input-email");
-                var value =  email_field.form.email.value;
+                var value =  email_field.value;
                 submit(value);
         });
         $('#input-email').keypress(function(e){
                 if(e.keyCode == 13){
                         var email_field = document.getElementById("input-email");
-                        var value =  email_field.form.email.value;
+                        //var value =  email_field.form.email.value;
+                        var value = email_field.value;
+                        alert(value);
                         submit(value);
                 }
         });
@@ -31,12 +33,12 @@ function submit(email){
 
 function showResponse(data){
         if(data==='1'){
-                var response = " <span>You will be notified when Byte is up and running!  </span> <span>In the mean time, invite your friends. </span>";
+                var response = "<span>You will be notified when Byte is up and running!  </span> In the mean time, <a href = \"http://www.facebook.com/sharer.php?u=http://www.datbyte.com\" onclick=\"window.open(this.href, 'Share Byte', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=1'); window.close(); return false;\"> <u><b><font color= \"#3B5999\">invite</font></b></u></a> your friends.";
                 document.getElementById("beta-invite").innerHTML = response ; //+ "<br>"+ data;
                 document.getElementById("beta-invite").style.color = "#41A317" ;
                 //showShareLink();
         }else if(data==='2'){
-                var response = " <span> This email is already registered!  </span> <span> In the mean time, invite your friends. </span>";
+                var response = " <span> This email is already registered!  </span>  In the mean time, <a href = \"http://www.facebook.com/sharer.php?u=http://www.datbyte.com\" onclick=\"window.open(this.href, 'Share Byte', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=1'); window.close(); return false;\"> <u><b><font color= \"#3B5999\">invite</font></b></u></a> your friends.";
                 document.getElementById("beta-invite").innerHTML = response ;// + "<br>" + data;
                 document.getElementById("beta-invite").style.color = "#41A317";
         }else if(data==='0'){
