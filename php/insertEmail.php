@@ -4,8 +4,7 @@
 $con = mysql_connect("localhost","root","ilikecake");
 mysql_select_db("mysql",$con) or die("Could not select examples");
 
-$email = $_POST["email"];
-$email = mysql_real_escape_string($email);
+$email = mysql_real_escape_string( $_POST["email"] );
 
 $doesExist = mysql_query("SELECT email FROM Singups WHERE email = '$email'", $con);
  
