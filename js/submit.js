@@ -38,7 +38,7 @@ function showResponse(data){
         }else if(data==='2'){
                 var response = " <span> This email is already registered!  </span> <span> In the mean time, invite your friends. </span>";
                 document.getElementById("beta-invite").innerHTML = response ;// + "<br>" + data;
-                document.getElementById("beta-invite").style.color = "#59E817";
+                document.getElementById("beta-invite").style.color = "#41A317";
         }else if(data==='0'){
                 var response = " <span> This email is not valid! </span> <span> Please enter a valid email address. </span>";
                 document.getElementById("beta-invite").innerHTML = response; //+ "<br>"  + data;
