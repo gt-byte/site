@@ -140,10 +140,15 @@
 
 
 $( window ).scroll(function() {
-	if ($(window).scrollTop() >= 20) {
+	if ($(window).scrollTop() >= 120) {
 		$( ".fa-angle-down" ).fadeOut( "slow", function() {
 			$( ".fa-angle-down" ).hide();
 		});
+		var offset =  $(window).height() - document.getElementById("header").offsetHeight;
+		if(offset < 0){
+			offset = offset + 237;
+		}
+        document.getElementById("header").style.minHeight = document.getElementById("header").offsetHeight + offset + "px";
 	}
 	else {
 		$( ".fa-angle-down" ).fadeIn( "slow", function() {

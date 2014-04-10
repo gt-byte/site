@@ -10,7 +10,7 @@ $(document).ready(function() {
                         var email_field = document.getElementById("input-email");
                         //var value =  email_field.form.email.value;
                         var value = email_field.value;
-                        alert(value);
+                        //alert(value);
                         submit(value);
                 }
         });
@@ -19,7 +19,8 @@ $(document).ready(function() {
 
 function submit(email){
         $.ajax({
-                url: 'php/insertEmail.php', //url: 'http://datbyte.com/insertEmail.php',
+                url: 'php/insertEmail.php', 
+                //url: 'http://datbyte.com/php/insertEmail.php',
                 type: 'post',
                 data: {"email":email},
                 success: function(data, success) {
@@ -60,7 +61,7 @@ function showShareLink(){
 }
 
 function fixHeaderHeight(){
-        var offset = $(window).height()- document.getElementById("header").offsetHeight;
+        var offset =  $(window).height() - document.getElementById("header").offsetHeight;
         document.getElementById("header").style.minHeight = document.getElementById("header").offsetHeight + offset + "px";
 }
 
