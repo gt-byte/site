@@ -18,17 +18,6 @@ header {
 	line-height: 1.1;
 }
 
-input[type=submit]{
-	padding: 9px;
-	font-size: 18px;
-	margin: 0;
-	background: #000;
-	color: #fff;
-
-	border: 2px;
-	border-radius:25px;
-}
-
 
 input[type=email]{
 	padding: 9px;
@@ -106,11 +95,6 @@ span {
     right: 6px;
 }
 
-
-#server-response{
-	font-size: 0.25em;
-}
-
-#share-link{
-	font-size: 0.25em;
+form{
+	margin: -0.4em 0em 0em 0em;
 }
