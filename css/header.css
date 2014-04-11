@@ -68,16 +68,20 @@ span {
     font-family: 'Yanone Kaffeesatz';
     font-weight: 700;
     font-size: 0.25em;
+
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
     border-radius: 8px;
+
     -webkit-box-shadow: -6px 0px 0px rgba(219,31,5,1), 0px 3px 3px rgba(0,0,0,.7);
     -moz-box-shadow: -6px 0px 0px rgba(219,31,5,1), 0px 3px 3px rgba(0,0,0,.7);
+    -ms-box-shadow: -6px 0px 0px rgba(219,31,5,1), 0px 3px 3px rgba(0,0,0,.7);
+    -o-box-shadow: -6px 0px 0px rgba(219,31,5,1), 0px 3px 3px rgba(0,0,0,.7);
+
     box-shadow: -6px 0px 0px rgba(219,31,5,1), 0px 3px 3px rgba(0,0,0,.7);
-    /*
-    margin: 100px auto;
-	width: 160px; 
-	*/
+
 	text-align: center;
 	
 	-webkit-transition: all .1s ease;
